@@ -1,0 +1,12 @@
+[build]
+  # No build command needed for static HTML/CSS/JS site
+  command = ""
+  # Publish the root directory where index.html is located
+  publish = "."
+
+[[redirects]]
+  # Redirect all routes to index.html for single-page app behavior
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
