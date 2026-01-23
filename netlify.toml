@@ -4,8 +4,39 @@
   # Publish the root directory where index.html is located
   publish = "."
 
+# Redirect all old pages to main page (301 permanent redirects for SEO)
 [[redirects]]
-  # Redirect all routes to index.html for single-page app behavior
+  from = "/contact-us"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/service-area"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/commercial-services"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/automotive-services"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services/residential-services"
+  to = "/"
+  status = 301
+
+# Catch-all redirect for any other paths to main page
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

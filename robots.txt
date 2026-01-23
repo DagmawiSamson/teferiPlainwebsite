@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: 
+
+# Sitemap location
+Sitemap: https://locksmithta.com/sitemap.xml
+
