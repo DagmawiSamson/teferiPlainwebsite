@@ -1,6 +1,11 @@
 User-agent: *
 Allow: /
-Disallow: 
+Disallow: /contact-us
+Disallow: /services
+Disallow: /service-area
+Disallow: /services/commercial-services
+Disallow: /services/automotive-services
+Disallow: /services/residential-services
 
 # Sitemap location
 Sitemap: https://locksmithta.com/sitemap.xml

@@ -4,36 +4,36 @@
   # Publish the root directory where index.html is located
   publish = "."
 
-# Redirect all old pages to main page (301 permanent redirects for SEO)
+# Return 410 Gone for permanently removed pages (tells Google these pages are gone forever)
 [[redirects]]
   from = "/contact-us"
   to = "/"
-  status = 301
+  status = 410
 
 [[redirects]]
   from = "/services"
   to = "/"
-  status = 301
+  status = 410
 
 [[redirects]]
   from = "/service-area"
   to = "/"
-  status = 301
+  status = 410
 
 [[redirects]]
   from = "/services/commercial-services"
   to = "/"
-  status = 301
+  status = 410
 
 [[redirects]]
   from = "/services/automotive-services"
   to = "/"
-  status = 301
+  status = 410
 
 [[redirects]]
   from = "/services/residential-services"
   to = "/"
-  status = 301
+  status = 410
 
 # Catch-all redirect for any other paths to main page
 [[redirects]]
