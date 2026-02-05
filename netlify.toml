@@ -4,36 +4,42 @@
   # Publish the root directory where index.html is located
   publish = "."
 
-# Return 410 Gone for permanently removed pages (tells Google these pages are gone forever)
+# Return 410 Gone for permanently removed pages using Netlify Function
 [[redirects]]
   from = "/contact-us"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/services"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/service-area"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/services/commercial-services"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/services/automotive-services"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/services/residential-services"
-  to = "/"
-  status = 410
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
 
 # Catch-all redirect for any other paths to main page
 [[redirects]]

@@ -1,8 +1,8 @@
-/contact-us / 410
-/services / 410
-/service-area / 410
-/services/commercial-services / 410
-/services/automotive-services / 410
-/services/residential-services / 410
+/contact-us /.netlify/functions/410gone 200!
+/services /.netlify/functions/410gone 200!
+/service-area /.netlify/functions/410gone 200!
+/services/commercial-services /.netlify/functions/410gone 200!
+/services/automotive-services /.netlify/functions/410gone 200!
+/services/residential-services /.netlify/functions/410gone 200!
 /* /index.html 200
 
