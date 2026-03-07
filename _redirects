@@ -1,8 +1,18 @@
-/contact-us /.netlify/functions/410gone 200!
-/services /.netlify/functions/410gone 200!
-/service-area /.netlify/functions/410gone 200!
-/services/commercial-services /.netlify/functions/410gone 200!
-/services/automotive-services /.netlify/functions/410gone 200!
-/services/residential-services /.netlify/functions/410gone 200!
-/* /index.html 200
+# Removed pages - return 410 Gone (both with and without .html extension)
+/contact-us                          /.netlify/functions/410gone 200!
+/contact-us.html                     /.netlify/functions/410gone 200!
+/services                            /.netlify/functions/410gone 200!
+/services.html                       /.netlify/functions/410gone 200!
+/service-area                        /.netlify/functions/410gone 200!
+/service-area.html                   /.netlify/functions/410gone 200!
+/services/commercial-services        /.netlify/functions/410gone 200!
+/services/commercial-services.html   /.netlify/functions/410gone 200!
+/services/automotive-services        /.netlify/functions/410gone 200!
+/services/automotive-services.html   /.netlify/functions/410gone 200!
+/services/residential-services       /.netlify/functions/410gone 200!
+/services/residential-services.html  /.netlify/functions/410gone 200!
+/410.html                            /.netlify/functions/410gone 200!
 
+# Catch-all: redirect any unknown URL to homepage with 301 (permanent).
+# This prevents Google from indexing duplicate URLs that all serve index.html.
+/* / 301

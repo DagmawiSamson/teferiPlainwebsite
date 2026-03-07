@@ -4,9 +4,15 @@
   # Publish the root directory where index.html is located
   publish = "."
 
-# Return 410 Gone for permanently removed pages using Netlify Function
+# Return 410 Gone for permanently removed pages (without .html extension)
 [[redirects]]
   from = "/contact-us"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contact-us.html"
   to = "/.netlify/functions/410gone"
   status = 200
   force = true
@@ -18,7 +24,19 @@
   force = true
 
 [[redirects]]
+  from = "/services.html"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/service-area"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/service-area.html"
   to = "/.netlify/functions/410gone"
   status = 200
   force = true
@@ -30,7 +48,19 @@
   force = true
 
 [[redirects]]
+  from = "/services/commercial-services.html"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/services/automotive-services"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/services/automotive-services.html"
   to = "/.netlify/functions/410gone"
   status = 200
   force = true
@@ -41,9 +71,22 @@
   status = 200
   force = true
 
-# Catch-all redirect for any other paths to main page
+[[redirects]]
+  from = "/services/residential-services.html"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/410.html"
+  to = "/.netlify/functions/410gone"
+  status = 200
+  force = true
+
+# Catch-all: permanently redirect any unknown URL to homepage.
+# IMPORTANT: status 301 (not 200) prevents Google from indexing duplicate URLs
+# that all serve the same index.html content.
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
-
+  to = "/"
+  status = 301
