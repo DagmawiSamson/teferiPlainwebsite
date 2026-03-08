@@ -1,12 +1,20 @@
 User-agent: *
 Allow: /
+
+# Pages permanently removed - block crawling of both URL formats
 Disallow: /contact-us
+Disallow: /contact-us.html
 Disallow: /services
+Disallow: /services.html
 Disallow: /service-area
+Disallow: /service-area.html
 Disallow: /services/commercial-services
+Disallow: /services/commercial-services.html
 Disallow: /services/automotive-services
+Disallow: /services/automotive-services.html
 Disallow: /services/residential-services
+Disallow: /services/residential-services.html
+Disallow: /410.html
 
 # Sitemap location
 Sitemap: https://locksmithta.com/sitemap.xml
-
