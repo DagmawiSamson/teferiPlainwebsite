@@ -1,3 +1,6 @@
+# Redirect non-www to www (permanent)
+https://locksmithta.com/* https://www.locksmithta.com/:splat 301!
+
 # Removed pages - return 410 Gone (both with and without .html extension)
 /contact-us                          /.netlify/functions/410gone 200!
 /contact-us.html                     /.netlify/functions/410gone 200!

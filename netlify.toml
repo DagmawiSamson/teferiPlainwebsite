@@ -4,6 +4,13 @@
   # Publish the root directory where index.html is located
   publish = "."
 
+# Redirect non-www to www (permanent)
+[[redirects]]
+  from = "https://locksmithta.com/*"
+  to = "https://www.locksmithta.com/:splat"
+  status = 301
+  force = true
+
 # Return 410 Gone for permanently removed pages (without .html extension)
 [[redirects]]
   from = "/contact-us"
